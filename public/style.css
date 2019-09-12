@@ -1,0 +1,95 @@
+body{
+  background-image: linear-gradient(to bottom right,#525151, black);
+  margin-top: 130px;
+  margin-bottom: 130px;
+
+}
+
+.heading {
+  margin-top: -130px;
+  text-align: center;
+  margin-bottom: 50px;
+  position: fixed;
+  width: 100%;
+  background-color: #1db954;
+
+
+}
+
+.heading h1{
+  display: inline-block;
+  color: white;
+}
+
+.content{
+  margin-top:30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color:grey;
+  border-style: hidden;
+  border-width: 0.5px;
+  border-radius: 10px;
+  padding: 20px;
+  color:white;
+
+}
+
+
+.nav_menu{
+  background-color: #1db954;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  border-top: solid;
+  border-width: 10px;
+
+ }
+
+.nav_menu a{
+  display: inline-block;
+  color: black;
+  padding: 30px 100px;
+  text-decoration: none;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+
+/*
+schedule page
+*/
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.weekdays li{
+  color: white;
+  margin-top:30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color:grey;
+  border-style: hidden;
+  border-width: 0.5px;
+  border-radius: 10px;
+  padding: 20px;
+
+}
+
+.time{
+  float: right;
+}
+
+@media only screen and (max-width: 750px) {
+  .nav_menu a{
+    padding: 30px 8px;
+    margin-left: 2px;
+    margin-right:2px;
+
+  }
+
+
+}
