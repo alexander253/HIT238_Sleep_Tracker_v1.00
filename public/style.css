@@ -83,6 +83,10 @@ ul {
   float: right;
 }
 
+.button{
+  color: black;
+}
+
 @media only screen and (max-width: 750px) {
   .nav_menu a{
     padding: 30px 8px;
