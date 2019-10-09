@@ -14,16 +14,11 @@
     <h1>About Me</h1>
   </div>
 
-  <div class="content">
-  <p>What is your name?</p>
-    <input name="test" type="text" id = "name">
-    <button type="button" id= "btn" >Save</button>
-  </div>
+
 
     <div class="content">
       <p>Amount of hours slept goal:</p>
-        <input name="average sleep" type="text">
-        <button class= "button" type="button">Save</button>
+        <input class = "input "name="average sleep" type="text">
     </div>
 
     <div class="content">
@@ -45,6 +40,8 @@
 
     </div>
 
+          <div class= "button" type="button" > <a href="index.html">Save</a></div>
+
 
 
     <div class="nav_menu">
@@ -55,26 +52,7 @@
       <a href="faq.html"><span class="glyphicon glyphicon-question-sign"></span><br>FAQ</a>
     </div>
 
-<script type="text/javascript">
-const members = []
 
-const addMember = (ev)=>{
-    ev.preventDefault();  //to stop the form submitting
-    let member = {
-        id: Date.now(),
-        name: document.getElementById('name').value,
-
-    }
-    members.push(member);
-
-
-    //saving to localStorage
-    localStorage.setItem('MyMovieList', JSON.stringify(members) );
-}
-document.addEventListener('DOMContentLoaded', ()=>{
-    document.getElementById('btn').addEventListener('click', addMember);
-});
-</script>
 
   </body>
 </html>
