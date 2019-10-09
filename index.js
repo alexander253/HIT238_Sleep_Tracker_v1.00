@@ -1,6 +1,7 @@
 const express = require ('express');
 const path = require('path');
 const exphbs = require('express-handlebars');
+const members = require('./Members');
 
 const app = express();
 
@@ -14,8 +15,10 @@ app.get('/about', (req, res) =>
   res.render('about', {
     title: 'Update',
     name: 'Alex',
+    members
   })
 );
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 const PORT  = process.env.PORT || 5000;

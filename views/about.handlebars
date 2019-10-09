@@ -4,13 +4,16 @@
   </div>
 
 <div class="content">
-  <p>Hi there {{name}}</p>
+
+  {{#each members}}
+  <p>Hi there {{this.name}}</p>
+    {{/each}}
 
 </div>
     <div class="content">
-    <p>How many hours do you sleep on average per day?</p>
-      <input name="average sleep" type="text">
-      <button type="button">Save</button>
+    <p>What is your name?</p>
+      <input name="test" type="text" id = "name">
+      <button type="button" id= "btn" >Save</button>
     </div>
 
     <div class="content">
