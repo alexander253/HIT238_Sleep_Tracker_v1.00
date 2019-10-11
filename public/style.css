@@ -103,6 +103,10 @@ ul {
   font-size: 1.2em;
 }
 
+.result{
+  color: white;
+}
+
 @media only screen and (max-width: 750px) {
   .nav_menu a{
     padding: 30px 8px;
