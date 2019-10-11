@@ -1,7 +1,9 @@
 const inpName = document.getElementById("nameInput");
 const saveBtn = document.getElementById("saveBtn");
 const outName = document.getElementById("name");
+const sleepGoalHours = document.getElementById("goal");
 const key= "Name";
+const sleepGoal = "goalz";
 
 
 
@@ -19,9 +21,21 @@ if (key && value){
 
 };
 
-for (let i= 0; i<localStorage.length; i++){
-  const key = localStorage.key(i);
-  const value = localStorage.getItem(key);
+document.getElementById("hourBtn").addEventListener("click", saveGoal);
 
-  outName.innerHTML+= `${value}`;
+function saveGoal(){
+const hours = hourInp.value;
+
+console.log(hours);
+
+if (sleepGoal && hours){
+  localStorage.setItem(sleepGoal, hours);
+  location.reload();
 }
+
+
+
+
+
+
+};
