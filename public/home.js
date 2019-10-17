@@ -17,10 +17,12 @@ if (moreSleep<8 ){
   document.getElementById('moreSleep').innerHTML=("Looks like you need more sleep");
   document.getElementById('moreSleepTip').innerHTML=("Have you tried counting sheep?");
     document.getElementById('content_tip').style.backgroundColor=("red");
+    document.getElementById('sheep').src=('https://media.giphy.com/media/pZIhNH7oeCfjW/giphy.gif');
 }else {
   document.getElementById('moreSleep').innerHTML=("Looks like you are getting enough sleep");
   document.getElementById('moreSleepTip').innerHTML=("Make sure you keep it up on a regular basis");
   document.getElementById('content_tip').style.backgroundColor=("green");
+      document.getElementById('sheep').src=('https://media.giphy.com/media/AxVvjUImqDBA2HpHhe/giphy.gif');
 };
 
 if (moreSleep==goalHours){
