@@ -16,10 +16,11 @@ console.log(moreSleep);
 if (moreSleep<8 ){
   document.getElementById('moreSleep').innerHTML=("Looks like you need more sleep");
   document.getElementById('moreSleepTip').innerHTML=("Have you tried counting sheep?");
+    document.getElementById('content_tip').style.backgroundColor=("red");
 }else {
   document.getElementById('moreSleep').innerHTML=("Looks like you are getting enough sleep");
   document.getElementById('moreSleepTip').innerHTML=("Make sure you keep it up on a regular basis");
-
+  document.getElementById('content_tip').style.backgroundColor=("green");
 };
 
 if (moreSleep==goalHours){
