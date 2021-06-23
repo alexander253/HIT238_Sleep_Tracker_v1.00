@@ -1,10 +1,16 @@
-Sleep Tracker App
+Sleep Tracker v1.0
 
-Have implemented my app to run on a node server, mainly using express framework.
+Best viewed on mobile/ mobile view
+(Right click -> Inspect -> mobile icon)
 
-to run:
+Track your sleep pattern to optimise your productivity.
+Enter your name and the number of hours you want to try and achieve.
+Enter the amount of hours you sleep everyday to get the best daily recommendations.
 
-in cmd enter: node index
-to view site in browser enter: http://localhost:5000/index.html
+Currently uses local browser storage for fast accessable data.
 
-thats all so far....
+Work in progress
+-About me page only stores target hours and name
+-My Schedule- Will only output a predetermined sleep schedule 
+-Dynamic Recommendations on home page needs work
+-FAQ page - can not submit a question 
